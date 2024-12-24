@@ -1,0 +1,14 @@
+<!-- voting_app/templates/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Home - Voting App{% endblock %}
+
+{% block content %}
+<h1>Welcome to the Voting App!</h1>
+<br>
+<div class="btn-group" role="group" aria-label="Basic example">
+    <a href="{% url 'movies' %}" class="btn btn-primary">Movies</a>
+    <a href="{% url 'series' %}" class="btn btn-secondary">Series</a>
+    <a href="{% url 'ratings' %}" class="btn btn-info">Ratings</a>
+</div>
+{% endblock %}

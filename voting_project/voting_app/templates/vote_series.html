@@ -1,0 +1,9 @@
+<!-- voting_app/templates/vote_series.html -->
+{% extends 'base.html' %}
+
+{% block title %}Vote - Voting App{% endblock %}
+
+{% block content %}
+<h2>Thanks for voting!</h2>
+<p>{{ serie.name }} now has {{ serie.points }} votes.</p>
+{% endblock %}
